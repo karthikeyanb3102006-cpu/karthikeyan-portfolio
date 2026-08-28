@@ -10,7 +10,12 @@ export const profile = {
     "Motivated and hardworking professional seeking a position where I can apply my skills, grow within the organization, and contribute to team success.",
   resumeUrl: "/resume.pdf",
   // Add real links here when available
-  links: { github: "", linkedin: "", projectDemo: "", projectRepo: "" },
+  links: {
+    github: "https://github.com/karthikeyanb3102006-cpu",
+    linkedin: "",
+    projectDemo: "",
+    projectRepo: "https://github.com/karthikeyanb3102006-cpu/karthikeyan-portfolio-ai",
+  },
 } as const;
 
 export const education = [
