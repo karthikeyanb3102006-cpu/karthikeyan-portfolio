@@ -8,8 +8,7 @@ export const profile = {
   address: "463, NSK Street, Selvapuram, Coimbatore, Tamil Nadu",
   objective:
     "Motivated and hardworking professional seeking a position where I can apply my skills, grow within the organization, and contribute to team success.",
-  // Replace with the real resume file (e.g. place resume.pdf in /public and set "/resume.pdf")
-  resumeUrl: "",
+  resumeUrl: "/resume.pdf",
   // Add real links here when available
   links: { github: "", linkedin: "", projectDemo: "", projectRepo: "" },
 } as const;
