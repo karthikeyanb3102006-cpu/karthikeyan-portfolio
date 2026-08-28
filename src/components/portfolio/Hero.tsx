@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Download, Eye, Mail, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
+import profilePhoto from "@/assets/profile.jpg.asset.json";
 
 const phrases = [
   "Aspiring IT & Web Developer",
@@ -148,17 +149,12 @@ export function Hero() {
           className="relative mx-auto w-full max-w-xs sm:max-w-sm"
         >
           <div className="absolute -inset-6 rounded-[2rem] bg-[image:var(--gradient-accent)] opacity-20 blur-3xl" />
-          {/* Profile photo placeholder — replace the div below with:
-              <img src="/profile.jpg" alt="Karthikeyan.B" className="h-full w-full object-cover" /> */}
           <div className="glass relative aspect-square overflow-hidden rounded-[2rem] p-1">
-            <div className="grid h-full w-full place-items-center rounded-[1.75rem] bg-surface/70">
-              <div className="text-center">
-                <div className="text-gradient font-display text-6xl font-bold">KB</div>
-                <p className="mt-3 text-xs tracking-[0.2em] text-muted-foreground uppercase">
-                  Profile photo
-                </p>
-              </div>
-            </div>
+            <img
+              src={profilePhoto.url}
+              alt="Karthikeyan.B"
+              className="h-full w-full rounded-[1.75rem] object-cover"
+            />
           </div>
           <div className="glass absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-4 py-2 text-xs whitespace-nowrap">
             <Eye className="size-3.5 text-cyan" /> B.Sc. IT · 2024–2027
