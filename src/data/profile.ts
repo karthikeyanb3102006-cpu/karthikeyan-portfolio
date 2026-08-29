@@ -58,6 +58,15 @@ export const softSkills = [
 
 export const languages = ["Tamil", "English"];
 
+export const internship = {
+  role: "Web Development Intern",
+  company: "INITZ Technologies",
+  location: "Gandhipuram, Coimbatore",
+  period: "28 Apr 2025 – 14 May 2025",
+  description:
+    "Successfully completed internship training in Web Development at INITZ Technologies, Coimbatore. Performance and conduct were rated very good, with sincere and regular participation in all phases of the training program.",
+} as const;
+
 export const project = {
   title: "AI-Powered Personalized Web Dashboard",
   description:
