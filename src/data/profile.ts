@@ -82,3 +82,22 @@ export const project = {
   ],
   tech: ["React.js", "Node.js", "AI APIs"],
 };
+
+export const secondProject = {
+  title: "Success Real Estate",
+  tagline: "Your Dream • Our Priority",
+  description:
+    "A premium real estate web app for browsing, searching, saving and enquiring about properties for sale or rent, built around a luxury black & gold brand identity with a mobile-first, minimal interface.",
+  features: [
+    "Property search & filters",
+    "Rich listing detail pages",
+    "Save favourites",
+    "Enquiry / contact flow",
+    "Buy, Rent or Sell onboarding",
+    "Responsive premium UI",
+  ],
+  tech: ["TypeScript", "React", "Tailwind CSS", "PostgreSQL"],
+  demo: "https://success-real-estate.vercel.app",
+  repo: "https://github.com/karthikeyanb3102006-cpu/success-real-estate",
+};
+
