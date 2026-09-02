@@ -104,9 +104,10 @@ export function Projects() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Projects"
-          title="Featured project"
-          description="A personalized dashboard powered by AI APIs."
+          title="Featured projects"
+          description="An AI-powered dashboard and a premium real estate web app."
         />
+
 
         <Reveal>
           <article className="card-hover glass overflow-hidden rounded-3xl p-6 sm:p-8">
