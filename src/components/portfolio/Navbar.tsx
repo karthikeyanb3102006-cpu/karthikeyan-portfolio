@@ -1,6 +1,13 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { profile } from "@/data/profile";
+
+const hireMailto = `mailto:${profile.email}?subject=${encodeURIComponent(
+  "Job / Internship Opportunity for Karthikeyan.B",
+)}&body=${encodeURIComponent(
+  "Hi Karthikeyan,\n\nI came across your portfolio and would like to discuss an opportunity with you.\n\nRole: \nCompany: \nDetails: \n\nBest regards,\n",
+)}`;
 
 const links = [
   { id: "home", label: "Home" },
@@ -91,12 +98,12 @@ export function Navbar() {
           ))}
         </ul>
 
-        <button
-          onClick={() => go("contact")}
+        <a
+          href={hireMailto}
           className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03] md:inline-flex"
         >
           Hire Me
-        </button>
+        </a>
 
         <button
           onClick={() => setOpen((v) => !v)}
