@@ -171,6 +171,61 @@ export function Projects() {
             </div>
           </article>
         </Reveal>
+
+        <Reveal delay={0.1}>
+          <article className="card-hover glass mt-8 overflow-hidden rounded-3xl p-6 sm:p-8">
+            <span className="inline-flex items-center gap-2 rounded-full bg-cyan/12 px-3 py-1 text-xs font-medium text-cyan">
+              <Home className="size-3.5" /> Live project
+            </span>
+            <h3 className="mt-4 text-2xl font-bold sm:text-3xl">{secondProject.title}</h3>
+            <p className="mt-1 text-sm font-medium text-primary">{secondProject.tagline}</p>
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              {secondProject.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {secondProject.tech.map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-cyan/30 bg-cyan/8 px-3 py-1 text-xs font-medium text-cyan"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href={secondProject.demo}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-accent)] px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+              >
+                <ExternalLink className="size-4" /> View Project
+              </a>
+              <a
+                href={secondProject.repo}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-primary/10"
+              >
+                <Github className="size-4" /> GitHub
+              </a>
+            </div>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {secondProject.features.map((f, i) => (
+                <Reveal key={f} delay={i * 0.05}>
+                  <div className="rounded-xl border border-border bg-surface/40 p-4 text-sm transition-colors hover:border-primary/40">
+                    <CheckCircle2 className="mb-2 size-4 text-cyan" />
+                    {f}
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </article>
+        </Reveal>
+
       </div>
     </section>
   );
