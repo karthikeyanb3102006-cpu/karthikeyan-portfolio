@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Download, Eye, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Eye, Mail, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
 import profilePhoto from "@/assets/profile.jpg.asset.json";
