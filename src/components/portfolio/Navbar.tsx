@@ -91,12 +91,12 @@ export function Navbar() {
           ))}
         </ul>
 
-        <button
-          onClick={() => go("contact")}
+        <a
+          href={hireMailto}
           className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03] md:inline-flex"
         >
           Hire Me
-        </button>
+        </a>
 
         <button
           onClick={() => setOpen((v) => !v)}
