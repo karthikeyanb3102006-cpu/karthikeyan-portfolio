@@ -4,13 +4,15 @@ import {
   CloudSun,
   ExternalLink,
   Github,
+  Home,
   LayoutGrid,
   ListTodo,
   Moon,
   Sparkles,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { profile, project } from "@/data/profile";
+import { profile, project, secondProject } from "@/data/profile";
+
 
 function DashboardMockup() {
   return (
