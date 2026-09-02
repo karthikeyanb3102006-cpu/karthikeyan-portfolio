@@ -1,6 +1,13 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { profile } from "@/data/profile";
+
+const hireMailto = `mailto:${profile.email}?subject=${encodeURIComponent(
+  "Job / Internship Opportunity for Karthikeyan.B",
+)}&body=${encodeURIComponent(
+  "Hi Karthikeyan,\n\nI came across your portfolio and would like to discuss an opportunity with you.\n\nRole: \nCompany: \nDetails: \n\nBest regards,\n",
+)}`;
 
 const links = [
   { id: "home", label: "Home" },
