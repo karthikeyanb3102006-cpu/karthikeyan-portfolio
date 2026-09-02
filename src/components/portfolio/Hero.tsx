@@ -103,18 +103,6 @@ export function Hero() {
               View My Projects
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </button>
-            <a
-              href={profile.resumeUrl || undefined}
-              download={profile.resumeUrl ? "" : undefined}
-              aria-disabled={!profile.resumeUrl}
-              title={profile.resumeUrl ? "Download resume" : "Resume file not linked yet"}
-              className={`inline-flex items-center gap-2 rounded-full border border-primary/40 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary/10 ${
-                profile.resumeUrl ? "" : "opacity-60"
-              }`}
-            >
-              <Download className="size-4" />
-              Download Resume
-            </a>
             <button
               onClick={() => scrollTo("contact")}
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"

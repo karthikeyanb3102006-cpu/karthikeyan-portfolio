@@ -69,7 +69,6 @@ function Index() {
         <Internship />
         <Education />
         <Projects />
-        <Resume />
         <Contact />
       </main>
       <Footer />
