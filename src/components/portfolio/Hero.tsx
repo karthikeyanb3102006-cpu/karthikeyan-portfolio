@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Eye, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Download, Eye, Mail, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { profile } from "@/data/profile";
 import profilePhoto from "@/assets/profile.jpg.asset.json";
@@ -103,6 +103,14 @@ export function Hero() {
               View My Projects
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </button>
+            <a
+              href={profile.resumeUrl}
+              download="Karthikeyan-B-Resume.pdf"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary/20"
+            >
+              <Download className="size-4" />
+              Resume
+            </a>
             <button
               onClick={() => scrollTo("contact")}
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
