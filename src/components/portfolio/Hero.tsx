@@ -106,8 +106,11 @@ export function Hero() {
             <a
               href={profile.resumeUrl}
               download="Karthikeyan-B-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-primary/20"
             >
+
               <Download className="size-4" />
               Resume
             </a>
