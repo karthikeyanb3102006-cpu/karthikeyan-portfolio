@@ -9,7 +9,7 @@ const cards = [
 
 export function About() {
   return (
-    <section id="about" className="relative px-4 py-24 sm:px-6">
+    <section id="about" className="scene-frame relative min-h-[90vh] px-5 py-28 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="About"
@@ -17,8 +17,8 @@ export function About() {
           description="Getting to know the person behind the code."
         />
 
-        <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <Reveal className="space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+        <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+          <Reveal className="space-y-5 border-l border-primary/50 pl-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             <p>
               I am <span className="text-foreground">Karthikeyan.B</span>, a B.Sc. Information
               Technology student at Sri Ramakrishna College of Arts and Sciences with a strong
@@ -38,8 +38,8 @@ export function About() {
           <div className="grid gap-4">
             {cards.map((c, i) => (
               <Reveal key={c.title} delay={i * 0.08}>
-                <div className="card-hover glass flex items-start gap-4 rounded-2xl p-5">
-                  <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary">
+                <div className="card-hover flex items-start gap-4 border-t border-border bg-surface/30 p-5">
+                  <span className="grid size-11 shrink-0 place-items-center border border-primary/30 text-primary">
                     <c.icon className="size-5" />
                   </span>
                   <div className="min-w-0">

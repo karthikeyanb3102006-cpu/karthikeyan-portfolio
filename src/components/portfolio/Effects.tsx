@@ -117,14 +117,10 @@ export function Preloader() {
 
 export function Backdrop() {
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-      <div className="grid-bg animate-grid-drift absolute inset-0 opacity-40" />
-      <div className="animate-float-slow absolute -top-32 -left-24 size-[26rem] rounded-full bg-primary/20 blur-[120px]" />
-      <div
-        className="animate-float-slow absolute top-1/3 -right-28 size-[24rem] rounded-full bg-cyan/15 blur-[130px]"
-        style={{ animationDelay: "-6s" }}
-      />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_20%,var(--background)_85%)]" />
+    <div aria-hidden className="film-grain pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-background">
+      <div className="grid-bg absolute inset-0 opacity-25" />
+      <div className="absolute inset-x-0 top-[12vh] h-px bg-[image:var(--gradient-accent)] opacity-25 shadow-[var(--glow-accent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--background)_76%)]" />
     </div>
   );
 }
