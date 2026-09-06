@@ -9,7 +9,7 @@ export function Internship() {
   const [showCert, setShowCert] = useState(false);
 
   return (
-    <section id="internship" className="relative px-4 py-24 sm:px-6">
+    <section id="internship" className="scene-frame relative min-h-screen px-5 py-28 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Internship"
@@ -19,9 +19,9 @@ export function Internship() {
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <Reveal>
-            <div className="card-hover glass rounded-2xl p-6 sm:p-8">
+            <div className="card-hover border-l-2 border-primary bg-surface/45 p-6 sm:p-8">
               <div className="flex items-start gap-4">
-                <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary">
+                <span className="grid size-12 shrink-0 place-items-center border border-primary/30 text-primary">
                   <Briefcase className="size-6" />
                 </span>
                 <div>
@@ -54,7 +54,7 @@ export function Internship() {
           <Reveal delay={0.1}>
             <button
               onClick={() => setShowCert(true)}
-              className="card-hover glass group block w-full overflow-hidden rounded-2xl text-left"
+               className="card-hover group block w-full overflow-hidden border border-border bg-surface/45 text-left"
               aria-label="View internship certificate"
             >
               <img

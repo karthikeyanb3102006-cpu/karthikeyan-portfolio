@@ -56,7 +56,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass border-b py-2" : "border-b border-transparent py-4"
+        scrolled ? "border-b border-border bg-background/90 py-2 backdrop-blur-xl" : "border-b border-transparent py-4"
       }`}
     >
       <nav
@@ -65,10 +65,10 @@ export function Navbar() {
       >
         <button
           onClick={() => go("home")}
-          className="font-display text-lg font-bold tracking-tight"
+          className="font-display text-2xl font-normal tracking-[0.08em]"
           aria-label="Go to top"
         >
-          <span className="text-gradient">KB</span>
+          <span className="text-primary">KB</span>
           <span className="ml-2 hidden text-sm font-medium text-muted-foreground sm:inline">
             Karthikeyan.B
           </span>
@@ -80,7 +80,7 @@ export function Navbar() {
               <button
                 onClick={() => go(l.id)}
                 aria-current={active === l.id ? "true" : undefined}
-                className={`relative rounded-full px-4 py-2 text-sm transition-colors ${
+              className={`relative px-3 py-2 text-[10px] font-semibold tracking-[0.12em] uppercase transition-colors ${
                   active === l.id
                     ? "text-foreground"
                     : "text-muted-foreground hover:text-foreground"
@@ -89,7 +89,7 @@ export function Navbar() {
                 {active === l.id && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 -z-10 rounded-full bg-primary/15 ring-1 ring-primary/30"
+                    className="absolute inset-x-3 bottom-0 -z-10 h-px bg-primary"
                     transition={{ type: "spring", stiffness: 380, damping: 32 }}
                   />
                 )}
@@ -101,7 +101,7 @@ export function Navbar() {
 
         <a
           href={hireMailto}
-          className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03] md:inline-flex"
+          className="hidden rounded-sm border border-primary px-4 py-2 text-xs font-semibold tracking-[0.12em] text-primary uppercase transition-colors hover:bg-primary hover:text-primary-foreground md:inline-flex"
         >
           Hire Me
         </a>
@@ -134,7 +134,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="glass mx-4 mt-2 overflow-hidden rounded-2xl md:hidden"
+            className="mx-4 mt-2 overflow-hidden rounded-sm border border-border bg-background/95 backdrop-blur-xl md:hidden"
           >
             {links.map((l, i) => (
               <motion.li

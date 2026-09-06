@@ -13,8 +13,8 @@ export function Education() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="education" className="relative px-4 py-24 sm:px-6">
-      <div className="mx-auto max-w-4xl">
+    <section id="education" className="scene-frame relative min-h-screen px-5 py-28 sm:px-8 lg:px-12">
+      <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Education"
           title="Academic journey"
@@ -35,9 +35,9 @@ export function Education() {
                   <span className="absolute top-6 -left-[1.85rem] grid size-6 place-items-center rounded-full border border-primary/50 bg-background text-primary sm:-left-[2.6rem]">
                     <GraduationCap className="size-3.5" />
                   </span>
-                  <div className="card-hover glass rounded-2xl p-6">
+                   <div className="card-hover border border-border bg-surface/45 p-6 sm:grid sm:grid-cols-[10rem_1fr] sm:items-center sm:gap-6">
                     <div className="flex flex-wrap items-center gap-3">
-                      <span className="rounded-full bg-primary/12 px-3 py-1 text-xs font-medium text-primary">
+                      <span className="border border-primary/30 px-3 py-1 text-xs font-medium text-primary">
                         {e.period}
                       </span>
                       <span className="text-xs text-muted-foreground">{e.score}</span>

@@ -3,15 +3,14 @@ import { profile } from "@/data/profile";
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border px-4 py-12 sm:px-6">
+    <footer className="relative border-t border-border px-5 py-12 sm:px-8 lg:px-12">
       <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2">
         <div>
-          <h2 className="font-display text-xl font-bold">
-            Karthikeyan<span className="text-gradient">.B</span>
+          <h2 className="font-display text-4xl font-normal uppercase">
+            Karthikeyan<span className="text-primary">.B</span>
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">{profile.role}</p>
           <div className="mt-4 flex gap-2">
-            {/* Add real profile URLs in src/data/profile.ts when available */}
             <span
               title="LinkedIn — link to be added"
               className="glass grid size-9 place-items-center rounded-lg text-muted-foreground opacity-60"
@@ -19,8 +18,8 @@ export function Footer() {
               <Linkedin className="size-4" />
             </span>
             <span
-              title="GitHub — link to be added"
-              className="glass grid size-9 place-items-center rounded-lg text-muted-foreground opacity-60"
+              title="GitHub"
+              className="grid size-9 place-items-center border border-border text-muted-foreground"
             >
               <Github className="size-4" />
             </span>

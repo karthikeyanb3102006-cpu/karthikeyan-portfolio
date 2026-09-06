@@ -35,13 +35,14 @@ export function SectionHeading({
   description?: string;
 }) {
   return (
-    <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-      <span className="inline-block rounded-full border border-border/70 px-3 py-1 text-xs font-medium tracking-[0.2em] text-primary uppercase">
-        {eyebrow}
-      </span>
-      <h2 className="mt-4 text-3xl font-bold sm:text-4xl">{title}</h2>
+    <Reveal className="mb-14 max-w-4xl">
+      <div className="flex items-center gap-4 text-[10px] font-semibold tracking-[0.28em] text-primary uppercase">
+        <span className="h-px w-10 bg-primary/60" />
+        <span>{eyebrow}</span>
+      </div>
+      <h2 className="mt-5 text-5xl leading-none font-normal sm:text-7xl">{title}</h2>
       {description ? (
-        <p className="mt-3 text-sm text-muted-foreground sm:text-base">{description}</p>
+        <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">{description}</p>
       ) : null}
     </Reveal>
   );
