@@ -71,7 +71,7 @@ export function TechnicalSkills() {
                         <span className="grid size-11 place-items-center rounded-xl bg-primary/12 text-primary transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110">
                           <Icon className="size-5" />
                         </span>
-                        <h4 className="mt-4 font-display text-base font-normal uppercase sm:text-lg">{item}</h4>
+                        <h4 className="mt-4 text-sm font-semibold sm:text-base">{item}</h4>
                         <p className="mt-1 text-xs text-muted-foreground">{group.category}</p>
                       </div>
                     </Reveal>
