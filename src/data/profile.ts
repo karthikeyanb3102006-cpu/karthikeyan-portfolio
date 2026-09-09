@@ -1,7 +1,7 @@
 export const profile = {
   name: "Karthikeyan.B",
   role: "B.Sc. IT Student | Aspiring IT & Web Developer",
-  email: "karthikeyan.b3103006@gmail.com",
+  email: "karthikeyan.b3102006@gmail.com",
   footerEmail: "karthikeyan.b3102006@gmail.com",
   phone: "8072443060",
   location: "Coimbatore, Tamil Nadu, India",
