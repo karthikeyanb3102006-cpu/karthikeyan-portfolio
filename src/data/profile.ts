@@ -97,7 +97,7 @@ export const secondProject = {
     "Responsive premium UI",
   ],
   tech: ["TypeScript", "React", "Tailwind CSS", "PostgreSQL"],
-  demo: "https://success-real-estate.vercel.app",
+  demo: "https://success-real-estate.lovable.app",
   repo: "https://github.com/karthikeyanb3102006-cpu/success-real-estate",
 };
 
