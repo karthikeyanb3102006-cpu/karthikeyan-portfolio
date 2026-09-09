@@ -3,7 +3,7 @@ export const profile = {
   role: "B.Sc. IT Student | Aspiring IT & Web Developer",
   email: "karthikeyan.b3102006@gmail.com",
   footerEmail: "karthikeyan.b3102006@gmail.com",
-  phone: "8072443060",
+  phone: "+91 8072443060",
   location: "Coimbatore, Tamil Nadu, India",
   address: "463, NSK Street, Selvapuram, Coimbatore, Tamil Nadu",
   objective:
