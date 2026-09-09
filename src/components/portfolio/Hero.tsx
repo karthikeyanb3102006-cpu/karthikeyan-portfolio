@@ -114,13 +114,15 @@ export function Hero() {
               <Download className="size-4" />
               Resume
             </a>
-            <button
-              onClick={() => scrollTo("contact")}
-              className="inline-flex items-center gap-2 rounded-sm px-3 py-3.5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase transition-colors hover:text-primary"
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=karthikeyan.b3102006@gmail.com&su=Job / Internship Opportunity for Karthikeyan.B"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3.5 text-xs font-semibold tracking-[0.12em] text-foreground uppercase transition-colors hover:border-primary hover:text-primary"
             >
               <Mail className="size-4" />
-              Contact Me
-            </button>
+              Get in Touch
+            </a>
           </motion.div>
 
           <motion.div
